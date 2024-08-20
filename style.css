@@ -1,0 +1,45 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+h1, h2 {
+  color: #343a40;
+}
+
+header {
+  background-image: url('https://via.placeholder.com/1200x400');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+#name, #email, #message {
+  margin-bottom: 15px;
+}
+
+#message {
+  resize: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link do Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-5">
+      <h1 class="display-4">Bem-vindo ao Meu Portfólio</h1>
+      <p class="lead">Desenvolvedor Web | Front-End | Back-End</p>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img
+            src="https://robohash.org/picture.png?size=200x200"
+            alt="Minha Foto"
+            class="rounded-circle img-fluid"
+          />
+        </div>
+        <div class="col-md-8">
+          <h2 class="font-weight-bold">Sobre Mim</h2>
+          <p>
+            Sou um aluno da Descomplica que está amando aprender sobre
+            Desenvolvimento Front-End e Back-end. Tenho planos para trocar de
+            carreira e seguir na área de desenvolvimento.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center font-weight-bold mb-4">Meus Projetos</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://picsum.photos/400/200"
+                class="card-img-top"
+                alt="Projeto 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Projeto 1</h5>
+                <p class="card-text">
+                  Descrição breve do projeto 1. Este projeto demonstra minhas
+                  habilidades em HTML, CSS e JavaScript.
+                </p>
+                <a href="#" class="btn btn-primary">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://picsum.photos/400/200"
+                class="card-img-top"
+                alt="Projeto 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Projeto 2</h5>
+                <p class="card-text">
+                  Descrição breve do projeto 2. Este projeto destaca meu
+                  trabalho com frameworks front-end.
+                </p>
+                <a href="#" class="btn btn-primary">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img
+                src="https://picsum.photos/400/200"
+                class="card-img-top"
+                alt="Projeto 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Projeto 3</h5>
+                <p class="card-text">
+                  Descrição breve do projeto 3. Este projeto apresenta minha
+                  experiência em desenvolvimento back-end.
+                </p>
+                <a href="#" class="btn btn-primary">Ver Projeto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="container my-5">
+      <h2 class="text-center font-weight-bold mb-4">Contato</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Seu nome"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Seu email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Sua mensagem"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>
+        &copy; <span id="ano-atual"></span> Meu Portfólio | Desenvolvido por Mim
+      </p>
+    </footer>
+
+    <!-- Script para definir o ano atual no rodapé -->
+    <script>
+      document.getElementById('ano-atual').textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
